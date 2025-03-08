@@ -40,7 +40,7 @@ import { Marquee } from "@/components/magicui/marquee";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 import { AnimatedList } from "@/components/magicui/animated-list";
-import { ConfettiButton } from "@/components/magicui/confetti";
+import { ConfettiButton, ConfettiRef } from "@/components/magicui/confetti";
 
 import { cn } from "@/lib/utils";
 import { Tree, Folder, File } from "@/components/magicui/file-tree"
@@ -122,7 +122,6 @@ export default function LandingPage() {
               Стоимость
             </a>
             <ConfettiButton
-              manualstart={false}
               options={{
                 get angle() {
                   return Math.random() * 360;
